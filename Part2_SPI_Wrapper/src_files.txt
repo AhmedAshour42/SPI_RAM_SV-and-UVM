@@ -1,0 +1,17 @@
+spi_config_object.sv
+spi_Seq_Item.sv
+spi_Sequences.sv
+spi_Sequencer.sv
+spi_monitor.sv
+spi_driver.sv
+spi_agent.sv
+spi_scoreboard.sv
+spi_coverage_collector.sv
+spi_env.sv
+spi_test.sv
+spi_if.sv
+SPI_Wrapper.v
+Ram.sv
+Slave.v
+SPI_SVA.sv
+spi_top.sv

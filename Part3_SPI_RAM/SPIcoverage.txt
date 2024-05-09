@@ -1,0 +1,881 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/DUT/r1
+=== Design Unit: work.ram
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         0         2     0.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/DUT/r1/Assrt1   ram.sv(24)                         0          0
+/top/DUT/r1/Assrt2   ram.sv(25)                         0          0
+
+=================================================================================
+=== Instance: /top/DUT/check_asserts
+=== Design Unit: work.SPI_Asrts
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       5         5         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/DUT/check_asserts/toCHK_CMD_sva
+                     SPI_SVA.sv(32)                     0          1
+/top/DUT/check_asserts/toWRITE_sva
+                     SPI_SVA.sv(33)                     0          1
+/top/DUT/check_asserts/toREAD_sva
+                     SPI_SVA.sv(34)                     0          1
+/top/DUT/check_asserts/toIDLE_sva
+                     SPI_SVA.sv(35)                     0          1
+/top/DUT/check_asserts/Reset_sva
+                     SPI_SVA.sv(36)                     0          1
+
+Directive Coverage:
+    Directives                       5         5         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top/DUT/check_asserts/toCHK_CMD_cp      SPI_Asrts Verilog  SVA  SPI_SVA.sv(38)  36813 Covered   
+/top/DUT/check_asserts/toWRITE_cp        SPI_Asrts Verilog  SVA  SPI_SVA.sv(39)  17299 Covered   
+/top/DUT/check_asserts/toREAD_cp         SPI_Asrts Verilog  SVA  SPI_SVA.sv(40)  17307 Covered   
+/top/DUT/check_asserts/toIDLE_cp         SPI_Asrts Verilog  SVA  SPI_SVA.sv(41)  36866 Covered   
+/top/DUT/check_asserts/Reset_cp          SPI_Asrts Verilog  SVA  SPI_SVA.sv(42)  3941 Covered   
+
+=================================================================================
+=== Instance: /RAM_cv_collector_pkg
+=== Design Unit: work.RAM_cv_collector_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    96.42%
+        Coverpoints/Crosses          7        na        na        na
+            Covergroup Bins        204       203         1    99.50%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /RAM_cv_collector_pkg/RAM_coverage/RAM_cvr_gp 
+                                                       96.42%        100          -    Uncovered            
+    covered/total bins:                                   203        204          -                      
+    missing/total bins:                                     1        204          -                      
+    % Hit:                                             99.50%        100          -                      
+    Coverpoint RAM_command_cp                         100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write_address                                5299          1          -    Covered              
+        bin write_data                                   5169          1          -    Covered              
+        bin read_address                                 5127          1          -    Covered              
+        bin read_data                                    5126          1          -    Covered              
+    Coverpoint RAM_din7to0_cp                         100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0:3]                                  192518          1          -    Covered              
+        bin auto[4:7]                                   32275          1          -    Covered              
+        bin auto[8:11]                                  15616          1          -    Covered              
+        bin auto[12:15]                                 15635          1          -    Covered              
+        bin auto[16:19]                                  7772          1          -    Covered              
+        bin auto[20:23]                                  7621          1          -    Covered              
+        bin auto[24:27]                                  7878          1          -    Covered              
+        bin auto[28:31]                                  7627          1          -    Covered              
+        bin auto[32:35]                                  3892          1          -    Covered              
+        bin auto[36:39]                                  4079          1          -    Covered              
+        bin auto[40:43]                                  3907          1          -    Covered              
+        bin auto[44:47]                                  4006          1          -    Covered              
+        bin auto[48:51]                                  4043          1          -    Covered              
+        bin auto[52:55]                                  4091          1          -    Covered              
+        bin auto[56:59]                                  3947          1          -    Covered              
+        bin auto[60:63]                                  4004          1          -    Covered              
+        bin auto[64:67]                                  2246          1          -    Covered              
+        bin auto[68:71]                                  2176          1          -    Covered              
+        bin auto[72:75]                                  2190          1          -    Covered              
+        bin auto[76:79]                                  2319          1          -    Covered              
+        bin auto[80:83]                                  2228          1          -    Covered              
+        bin auto[84:87]                                  2197          1          -    Covered              
+        bin auto[88:91]                                  2213          1          -    Covered              
+        bin auto[92:95]                                  2219          1          -    Covered              
+        bin auto[96:99]                                  2332          1          -    Covered              
+        bin auto[100:103]                                2158          1          -    Covered              
+        bin auto[104:107]                                2260          1          -    Covered              
+        bin auto[108:111]                                2254          1          -    Covered              
+        bin auto[112:115]                                2243          1          -    Covered              
+        bin auto[116:119]                                2261          1          -    Covered              
+        bin auto[120:123]                                2226          1          -    Covered              
+        bin auto[124:127]                                2275          1          -    Covered              
+        bin auto[128:131]                                1391          1          -    Covered              
+        bin auto[132:135]                                1420          1          -    Covered              
+        bin auto[136:139]                                1366          1          -    Covered              
+        bin auto[140:143]                                1498          1          -    Covered              
+        bin auto[144:147]                                1358          1          -    Covered              
+        bin auto[148:151]                                1426          1          -    Covered              
+        bin auto[152:155]                                1432          1          -    Covered              
+        bin auto[156:159]                                1461          1          -    Covered              
+        bin auto[160:163]                                1450          1          -    Covered              
+        bin auto[164:167]                                1395          1          -    Covered              
+        bin auto[168:171]                                1354          1          -    Covered              
+        bin auto[172:175]                                1403          1          -    Covered              
+        bin auto[176:179]                                1339          1          -    Covered              
+        bin auto[180:183]                                1412          1          -    Covered              
+        bin auto[184:187]                                1536          1          -    Covered              
+        bin auto[188:191]                                1360          1          -    Covered              
+        bin auto[192:195]                                1411          1          -    Covered              
+        bin auto[196:199]                                1459          1          -    Covered              
+        bin auto[200:203]                                1343          1          -    Covered              
+        bin auto[204:207]                                1458          1          -    Covered              
+        bin auto[208:211]                                1415          1          -    Covered              
+        bin auto[212:215]                                1377          1          -    Covered              
+        bin auto[216:219]                                1378          1          -    Covered              
+        bin auto[220:223]                                1366          1          -    Covered              
+        bin auto[224:227]                                1389          1          -    Covered              
+        bin auto[228:231]                                1464          1          -    Covered              
+        bin auto[232:235]                                1450          1          -    Covered              
+        bin auto[236:239]                                1421          1          -    Covered              
+        bin auto[240:243]                                1436          1          -    Covered              
+        bin auto[244:247]                                1420          1          -    Covered              
+        bin auto[248:251]                                1461          1          -    Covered              
+        bin auto[252:255]                                1444          1          -    Covered              
+    Coverpoint rx_valid_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    379280          1          -    Covered              
+        bin auto[1]                                     20721          1          -    Covered              
+    Coverpoint tx_valid_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    394911          1          -    Covered              
+        bin auto[1]                                      5090          1          -    Covered              
+    Cross rx_tx_cross                                  75.00%        100          -    Uncovered            
+        covered/total bins:                                 3          4          -                      
+        missing/total bins:                                 1          4          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0],auto[1]>                        5090          1          -    Covered              
+            bin <auto[1],auto[0]>                       20721          1          -    Covered              
+            bin <auto[0],auto[0]>                      374190          1          -    Covered              
+            bin <auto[1],auto[1]>                           0          1          1    ZERO                 
+    Cross write_address_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <write_address,auto[252:255]>              91          1          -    Covered              
+            bin <write_address,auto[124:127]>              85          1          -    Covered              
+            bin <write_address,auto[188:191]>              92          1          -    Covered              
+            bin <write_address,auto[60:63]>                82          1          -    Covered              
+            bin <write_address,auto[220:223]>              65          1          -    Covered              
+            bin <write_address,auto[92:95]>                77          1          -    Covered              
+            bin <write_address,auto[156:159]>              92          1          -    Covered              
+            bin <write_address,auto[28:31]>                82          1          -    Covered              
+            bin <write_address,auto[236:239]>              91          1          -    Covered              
+            bin <write_address,auto[108:111]>              96          1          -    Covered              
+            bin <write_address,auto[172:175]>              76          1          -    Covered              
+            bin <write_address,auto[44:47]>                80          1          -    Covered              
+            bin <write_address,auto[204:207]>              96          1          -    Covered              
+            bin <write_address,auto[76:79]>                80          1          -    Covered              
+            bin <write_address,auto[140:143]>              75          1          -    Covered              
+            bin <write_address,auto[12:15]>                86          1          -    Covered              
+            bin <write_address,auto[244:247]>              74          1          -    Covered              
+            bin <write_address,auto[116:119]>              79          1          -    Covered              
+            bin <write_address,auto[180:183]>              76          1          -    Covered              
+            bin <write_address,auto[52:55]>                79          1          -    Covered              
+            bin <write_address,auto[212:215]>              79          1          -    Covered              
+            bin <write_address,auto[84:87]>                78          1          -    Covered              
+            bin <write_address,auto[148:151]>              81          1          -    Covered              
+            bin <write_address,auto[20:23]>                94          1          -    Covered              
+            bin <write_address,auto[228:231]>             100          1          -    Covered              
+            bin <write_address,auto[100:103]>              62          1          -    Covered              
+            bin <write_address,auto[164:167]>              73          1          -    Covered              
+            bin <write_address,auto[36:39]>                79          1          -    Covered              
+            bin <write_address,auto[196:199]>              93          1          -    Covered              
+            bin <write_address,auto[68:71]>                84          1          -    Covered              
+            bin <write_address,auto[132:135]>              89          1          -    Covered              
+            bin <write_address,auto[4:7]>                  91          1          -    Covered              
+            bin <write_address,auto[248:251]>              73          1          -    Covered              
+            bin <write_address,auto[120:123]>              78          1          -    Covered              
+            bin <write_address,auto[184:187]>              94          1          -    Covered              
+            bin <write_address,auto[56:59]>                94          1          -    Covered              
+            bin <write_address,auto[216:219]>              92          1          -    Covered              
+            bin <write_address,auto[88:91]>               101          1          -    Covered              
+            bin <write_address,auto[152:155]>              69          1          -    Covered              
+            bin <write_address,auto[24:27]>                84          1          -    Covered              
+            bin <write_address,auto[232:235]>              73          1          -    Covered              
+            bin <write_address,auto[104:107]>              83          1          -    Covered              
+            bin <write_address,auto[168:171]>              73          1          -    Covered              
+            bin <write_address,auto[40:43]>                98          1          -    Covered              
+            bin <write_address,auto[200:203]>              82          1          -    Covered              
+            bin <write_address,auto[72:75]>                87          1          -    Covered              
+            bin <write_address,auto[136:139]>              73          1          -    Covered              
+            bin <write_address,auto[8:11]>                 86          1          -    Covered              
+            bin <write_address,auto[240:243]>              92          1          -    Covered              
+            bin <write_address,auto[112:115]>              81          1          -    Covered              
+            bin <write_address,auto[176:179]>              77          1          -    Covered              
+            bin <write_address,auto[48:51]>                71          1          -    Covered              
+            bin <write_address,auto[208:211]>              82          1          -    Covered              
+            bin <write_address,auto[80:83]>                79          1          -    Covered              
+            bin <write_address,auto[144:147]>              83          1          -    Covered              
+            bin <write_address,auto[16:19]>                80          1          -    Covered              
+            bin <write_address,auto[224:227]>              89          1          -    Covered              
+            bin <write_address,auto[96:99]>                76          1          -    Covered              
+            bin <write_address,auto[160:163]>              92          1          -    Covered              
+            bin <write_address,auto[32:35]>                73          1          -    Covered              
+            bin <write_address,auto[192:195]>              84          1          -    Covered              
+            bin <write_address,auto[64:67]>                77          1          -    Covered              
+            bin <write_address,auto[128:131]>              80          1          -    Covered              
+            bin <write_address,auto[0:3]>                  86          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin addr_r                            5127                     -    Occurred             
+            ignore_bin data_r                            5126                     -    Occurred             
+            ignore_bin data_w                            5169                     -    Occurred             
+    Cross read_address_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <read_address,auto[252:255]>               76          1          -    Covered              
+            bin <read_address,auto[124:127]>               91          1          -    Covered              
+            bin <read_address,auto[188:191]>               75          1          -    Covered              
+            bin <read_address,auto[60:63]>                 61          1          -    Covered              
+            bin <read_address,auto[220:223]>               83          1          -    Covered              
+            bin <read_address,auto[92:95]>                 76          1          -    Covered              
+            bin <read_address,auto[156:159]>               63          1          -    Covered              
+            bin <read_address,auto[28:31]>                 89          1          -    Covered              
+            bin <read_address,auto[236:239]>               80          1          -    Covered              
+            bin <read_address,auto[108:111]>               97          1          -    Covered              
+            bin <read_address,auto[172:175]>               73          1          -    Covered              
+            bin <read_address,auto[44:47]>                 83          1          -    Covered              
+            bin <read_address,auto[204:207]>               76          1          -    Covered              
+            bin <read_address,auto[76:79]>                 74          1          -    Covered              
+            bin <read_address,auto[140:143]>               87          1          -    Covered              
+            bin <read_address,auto[12:15]>                 79          1          -    Covered              
+            bin <read_address,auto[244:247]>               80          1          -    Covered              
+            bin <read_address,auto[116:119]>               79          1          -    Covered              
+            bin <read_address,auto[180:183]>               87          1          -    Covered              
+            bin <read_address,auto[52:55]>                 87          1          -    Covered              
+            bin <read_address,auto[212:215]>               58          1          -    Covered              
+            bin <read_address,auto[84:87]>                 92          1          -    Covered              
+            bin <read_address,auto[148:151]>               94          1          -    Covered              
+            bin <read_address,auto[20:23]>                 75          1          -    Covered              
+            bin <read_address,auto[228:231]>               81          1          -    Covered              
+            bin <read_address,auto[100:103]>              102          1          -    Covered              
+            bin <read_address,auto[164:167]>               72          1          -    Covered              
+            bin <read_address,auto[36:39]>                 68          1          -    Covered              
+            bin <read_address,auto[196:199]>               82          1          -    Covered              
+            bin <read_address,auto[68:71]>                 78          1          -    Covered              
+            bin <read_address,auto[132:135]>               73          1          -    Covered              
+            bin <read_address,auto[4:7]>                   76          1          -    Covered              
+            bin <read_address,auto[248:251]>               86          1          -    Covered              
+            bin <read_address,auto[120:123]>               92          1          -    Covered              
+            bin <read_address,auto[184:187]>               76          1          -    Covered              
+            bin <read_address,auto[56:59]>                 84          1          -    Covered              
+            bin <read_address,auto[216:219]>               78          1          -    Covered              
+            bin <read_address,auto[88:91]>                 68          1          -    Covered              
+            bin <read_address,auto[152:155]>               79          1          -    Covered              
+            bin <read_address,auto[24:27]>                 93          1          -    Covered              
+            bin <read_address,auto[232:235]>               92          1          -    Covered              
+            bin <read_address,auto[104:107]>               91          1          -    Covered              
+            bin <read_address,auto[168:171]>               85          1          -    Covered              
+            bin <read_address,auto[40:43]>                 79          1          -    Covered              
+            bin <read_address,auto[200:203]>               73          1          -    Covered              
+            bin <read_address,auto[72:75]>                 62          1          -    Covered              
+            bin <read_address,auto[136:139]>               78          1          -    Covered              
+            bin <read_address,auto[8:11]>                  79          1          -    Covered              
+            bin <read_address,auto[240:243]>               74          1          -    Covered              
+            bin <read_address,auto[112:115]>               80          1          -    Covered              
+            bin <read_address,auto[176:179]>               75          1          -    Covered              
+            bin <read_address,auto[48:51]>                 91          1          -    Covered              
+            bin <read_address,auto[208:211]>               79          1          -    Covered              
+            bin <read_address,auto[80:83]>                 74          1          -    Covered              
+            bin <read_address,auto[144:147]>               77          1          -    Covered              
+            bin <read_address,auto[16:19]>                 74          1          -    Covered              
+            bin <read_address,auto[224:227]>               88          1          -    Covered              
+            bin <read_address,auto[96:99]>                 95          1          -    Covered              
+            bin <read_address,auto[160:163]>               89          1          -    Covered              
+            bin <read_address,auto[32:35]>                 75          1          -    Covered              
+            bin <read_address,auto[192:195]>               70          1          -    Covered              
+            bin <read_address,auto[64:67]>                 88          1          -    Covered              
+            bin <read_address,auto[128:131]>               76          1          -    Covered              
+            bin <read_address,auto[0:3]>                   80          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin addr_w                            5299                     -    Occurred             
+            ignore_bin data_r1                           5126                     -    Occurred             
+            ignore_bin data_w1                           5169                     -    Occurred             
+
+=================================================================================
+=== Instance: /SPI_Sequences_pkg
+=== Design Unit: work.SPI_Sequences_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       3         3         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/SPI_Sequences_pkg/SPI_write_seq/body/#ublk#5870615#37/immed__42
+                     spi_Sequences.sv(42)               0          1
+/SPI_Sequences_pkg/SPI_read_seq/body/#ublk#5870615#61/immed__66
+                     spi_Sequences.sv(66)               0          1
+/SPI_Sequences_pkg/SPI_main_seq/body/#ublk#5870615#85/immed__90
+                     spi_Sequences.sv(90)               0          1
+
+=================================================================================
+=== Instance: /SPI_cv_collector_pkg
+=== Design Unit: work.SPI_cv_collector_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    93.33%
+        Coverpoints/Crosses          6        na        na        na
+            Covergroup Bins         41        37         4    90.24%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /SPI_cv_collector_pkg/SPI_coverage/SPI_cvr_gp 
+                                                       93.33%        100          -    Uncovered            
+    covered/total bins:                                    37         41          -                      
+    missing/total bins:                                     4         41          -                      
+    % Hit:                                             90.24%        100          -                      
+    Coverpoint cs_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross MOSI_cross_cs                               100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross SS_n_cross_cs                                60.00%        100          -    Uncovered            
+        covered/total bins:                                 6         10          -                      
+        missing/total bins:                                 4         10          -                      
+        % Hit:                                         60.00%        100          -                      
+    Cross MOSI_cross_SS_n                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/SPI_cv_collector_pkg::SPI_coverage::SPI_cvr_gp  
+                                                       93.33%        100          -    Uncovered            
+    covered/total bins:                                    37         41          -                      
+    missing/total bins:                                     4         41          -                      
+    % Hit:                                             90.24%        100          -                      
+    Coverpoint cs_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin IDLE_to_CHK_CMD                             40588          1          -    Covered              
+        bin CHK_CMD_to_WRITE                            19109          1          -    Covered              
+        bin CHK_CMD_to_READ_DATA                         9526          1          -    Covered              
+        bin CHK_CMD_to_READ_ADD                          9512          1          -    Covered              
+        bin CHK_CMD_to_IDLE                              2441          1          -    Covered              
+        bin WRITE_to_IDLE                               19108          1          -    Covered              
+        bin READ_DATA_to_IDLE                            9526          1          -    Covered              
+        bin READ_ADD_to_IDLE                             9512          1          -    Covered              
+        bin IDLE_state                                  43197          1          -    Covered              
+        bin CHK_CMD_state                               40588          1          -    Covered              
+        bin WRITE_state                                158802          1          -    Covered              
+        bin READ_ADD_state                              78752          1          -    Covered              
+        bin READ_DATA_state                             78662          1          -    Covered              
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    200274          1          -    Covered              
+        bin auto[1]                                    199727          1          -    Covered              
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    360392          1          -    Covered              
+        bin auto[1]                                     39609          1          -    Covered              
+    Cross MOSI_cross_cs                               100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],READ_DATA_state>               52795          1          -    Covered              
+            bin <auto[0],READ_DATA_state>               25867          1          -    Covered              
+            bin <auto[1],READ_ADD_state>                44407          1          -    Covered              
+            bin <auto[1],CHK_CMD_state>                 20285          1          -    Covered              
+            bin <auto[1],WRITE_state>                   60710          1          -    Covered              
+            bin <auto[1],IDLE_state>                    21530          1          -    Covered              
+            bin <auto[0],READ_ADD_state>                34345          1          -    Covered              
+            bin <auto[0],CHK_CMD_state>                 20303          1          -    Covered              
+            bin <auto[0],WRITE_state>                   98092          1          -    Covered              
+            bin <auto[0],IDLE_state>                    21667          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin cs_transition8                    2441                     -    Occurred             
+            ignore_bin cs_transition7                    9512                     -    Occurred             
+            ignore_bin cs_transition6                    9526                     -    Occurred             
+            ignore_bin cs_transition5                   19108                     -    Occurred             
+            ignore_bin cs_transition4                    9512                     -    Occurred             
+            ignore_bin cs_transition3                    9526                     -    Occurred             
+            ignore_bin cs_transition2                   19109                     -    Occurred             
+            ignore_bin cs_transition1                   40588                     -    Occurred             
+    Cross SS_n_cross_cs                                60.00%        100          -    Uncovered            
+        covered/total bins:                                 6         10          -                      
+        missing/total bins:                                 4         10          -                      
+        % Hit:                                         60.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0],READ_DATA_state>               78662          1          -    Covered              
+            bin <auto[1],IDLE_state>                    39609          1          -    Covered              
+            bin <auto[0],READ_ADD_state>                78752          1          -    Covered              
+            bin <auto[0],CHK_CMD_state>                 40588          1          -    Covered              
+            bin <auto[0],WRITE_state>                  158802          1          -    Covered              
+            bin <auto[0],IDLE_state>                     3588          1          -    Covered              
+            bin <auto[1],READ_DATA_state>                   0          1          1    ZERO                 
+            bin <auto[1],READ_ADD_state>                    0          1          1    ZERO                 
+            bin <auto[1],CHK_CMD_state>                     0          1          1    ZERO                 
+            bin <auto[1],WRITE_state>                       0          1          1    ZERO                 
+        Illegal and Ignore Bins:
+            ignore_bin cs_transition88                   2441                     -    Occurred             
+            ignore_bin cs_transition77                   9512                     -    Occurred             
+            ignore_bin cs_transition66                   9526                     -    Occurred             
+            ignore_bin cs_transition55                  19108                     -    Occurred             
+            ignore_bin cs_transition44                   9512                     -    Occurred             
+            ignore_bin cs_transition33                   9526                     -    Occurred             
+            ignore_bin cs_transition22                  19109                     -    Occurred             
+            ignore_bin cs_transition11                  40588                     -    Occurred             
+    Cross MOSI_cross_SS_n                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                       19741          1          -    Covered              
+            bin <auto[0],auto[1]>                       19868          1          -    Covered              
+            bin <auto[1],auto[0]>                      179986          1          -    Covered              
+            bin <auto[0],auto[0]>                      180406          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /RAM_cv_collector_pkg/RAM_coverage/RAM_cvr_gp 
+                                                       96.42%        100          -    Uncovered            
+    covered/total bins:                                   203        204          -                      
+    missing/total bins:                                     1        204          -                      
+    % Hit:                                             99.50%        100          -                      
+    Coverpoint RAM_command_cp                         100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin write_address                                5299          1          -    Covered              
+        bin write_data                                   5169          1          -    Covered              
+        bin read_address                                 5127          1          -    Covered              
+        bin read_data                                    5126          1          -    Covered              
+    Coverpoint RAM_din7to0_cp                         100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0:3]                                  192518          1          -    Covered              
+        bin auto[4:7]                                   32275          1          -    Covered              
+        bin auto[8:11]                                  15616          1          -    Covered              
+        bin auto[12:15]                                 15635          1          -    Covered              
+        bin auto[16:19]                                  7772          1          -    Covered              
+        bin auto[20:23]                                  7621          1          -    Covered              
+        bin auto[24:27]                                  7878          1          -    Covered              
+        bin auto[28:31]                                  7627          1          -    Covered              
+        bin auto[32:35]                                  3892          1          -    Covered              
+        bin auto[36:39]                                  4079          1          -    Covered              
+        bin auto[40:43]                                  3907          1          -    Covered              
+        bin auto[44:47]                                  4006          1          -    Covered              
+        bin auto[48:51]                                  4043          1          -    Covered              
+        bin auto[52:55]                                  4091          1          -    Covered              
+        bin auto[56:59]                                  3947          1          -    Covered              
+        bin auto[60:63]                                  4004          1          -    Covered              
+        bin auto[64:67]                                  2246          1          -    Covered              
+        bin auto[68:71]                                  2176          1          -    Covered              
+        bin auto[72:75]                                  2190          1          -    Covered              
+        bin auto[76:79]                                  2319          1          -    Covered              
+        bin auto[80:83]                                  2228          1          -    Covered              
+        bin auto[84:87]                                  2197          1          -    Covered              
+        bin auto[88:91]                                  2213          1          -    Covered              
+        bin auto[92:95]                                  2219          1          -    Covered              
+        bin auto[96:99]                                  2332          1          -    Covered              
+        bin auto[100:103]                                2158          1          -    Covered              
+        bin auto[104:107]                                2260          1          -    Covered              
+        bin auto[108:111]                                2254          1          -    Covered              
+        bin auto[112:115]                                2243          1          -    Covered              
+        bin auto[116:119]                                2261          1          -    Covered              
+        bin auto[120:123]                                2226          1          -    Covered              
+        bin auto[124:127]                                2275          1          -    Covered              
+        bin auto[128:131]                                1391          1          -    Covered              
+        bin auto[132:135]                                1420          1          -    Covered              
+        bin auto[136:139]                                1366          1          -    Covered              
+        bin auto[140:143]                                1498          1          -    Covered              
+        bin auto[144:147]                                1358          1          -    Covered              
+        bin auto[148:151]                                1426          1          -    Covered              
+        bin auto[152:155]                                1432          1          -    Covered              
+        bin auto[156:159]                                1461          1          -    Covered              
+        bin auto[160:163]                                1450          1          -    Covered              
+        bin auto[164:167]                                1395          1          -    Covered              
+        bin auto[168:171]                                1354          1          -    Covered              
+        bin auto[172:175]                                1403          1          -    Covered              
+        bin auto[176:179]                                1339          1          -    Covered              
+        bin auto[180:183]                                1412          1          -    Covered              
+        bin auto[184:187]                                1536          1          -    Covered              
+        bin auto[188:191]                                1360          1          -    Covered              
+        bin auto[192:195]                                1411          1          -    Covered              
+        bin auto[196:199]                                1459          1          -    Covered              
+        bin auto[200:203]                                1343          1          -    Covered              
+        bin auto[204:207]                                1458          1          -    Covered              
+        bin auto[208:211]                                1415          1          -    Covered              
+        bin auto[212:215]                                1377          1          -    Covered              
+        bin auto[216:219]                                1378          1          -    Covered              
+        bin auto[220:223]                                1366          1          -    Covered              
+        bin auto[224:227]                                1389          1          -    Covered              
+        bin auto[228:231]                                1464          1          -    Covered              
+        bin auto[232:235]                                1450          1          -    Covered              
+        bin auto[236:239]                                1421          1          -    Covered              
+        bin auto[240:243]                                1436          1          -    Covered              
+        bin auto[244:247]                                1420          1          -    Covered              
+        bin auto[248:251]                                1461          1          -    Covered              
+        bin auto[252:255]                                1444          1          -    Covered              
+    Coverpoint rx_valid_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    379280          1          -    Covered              
+        bin auto[1]                                     20721          1          -    Covered              
+    Coverpoint tx_valid_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    394911          1          -    Covered              
+        bin auto[1]                                      5090          1          -    Covered              
+    Cross rx_tx_cross                                  75.00%        100          -    Uncovered            
+        covered/total bins:                                 3          4          -                      
+        missing/total bins:                                 1          4          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0],auto[1]>                        5090          1          -    Covered              
+            bin <auto[1],auto[0]>                       20721          1          -    Covered              
+            bin <auto[0],auto[0]>                      374190          1          -    Covered              
+            bin <auto[1],auto[1]>                           0          1          1    ZERO                 
+    Cross write_address_cp                            100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <write_address,auto[252:255]>              91          1          -    Covered              
+            bin <write_address,auto[124:127]>              85          1          -    Covered              
+            bin <write_address,auto[188:191]>              92          1          -    Covered              
+            bin <write_address,auto[60:63]>                82          1          -    Covered              
+            bin <write_address,auto[220:223]>              65          1          -    Covered              
+            bin <write_address,auto[92:95]>                77          1          -    Covered              
+            bin <write_address,auto[156:159]>              92          1          -    Covered              
+            bin <write_address,auto[28:31]>                82          1          -    Covered              
+            bin <write_address,auto[236:239]>              91          1          -    Covered              
+            bin <write_address,auto[108:111]>              96          1          -    Covered              
+            bin <write_address,auto[172:175]>              76          1          -    Covered              
+            bin <write_address,auto[44:47]>                80          1          -    Covered              
+            bin <write_address,auto[204:207]>              96          1          -    Covered              
+            bin <write_address,auto[76:79]>                80          1          -    Covered              
+            bin <write_address,auto[140:143]>              75          1          -    Covered              
+            bin <write_address,auto[12:15]>                86          1          -    Covered              
+            bin <write_address,auto[244:247]>              74          1          -    Covered              
+            bin <write_address,auto[116:119]>              79          1          -    Covered              
+            bin <write_address,auto[180:183]>              76          1          -    Covered              
+            bin <write_address,auto[52:55]>                79          1          -    Covered              
+            bin <write_address,auto[212:215]>              79          1          -    Covered              
+            bin <write_address,auto[84:87]>                78          1          -    Covered              
+            bin <write_address,auto[148:151]>              81          1          -    Covered              
+            bin <write_address,auto[20:23]>                94          1          -    Covered              
+            bin <write_address,auto[228:231]>             100          1          -    Covered              
+            bin <write_address,auto[100:103]>              62          1          -    Covered              
+            bin <write_address,auto[164:167]>              73          1          -    Covered              
+            bin <write_address,auto[36:39]>                79          1          -    Covered              
+            bin <write_address,auto[196:199]>              93          1          -    Covered              
+            bin <write_address,auto[68:71]>                84          1          -    Covered              
+            bin <write_address,auto[132:135]>              89          1          -    Covered              
+            bin <write_address,auto[4:7]>                  91          1          -    Covered              
+            bin <write_address,auto[248:251]>              73          1          -    Covered              
+            bin <write_address,auto[120:123]>              78          1          -    Covered              
+            bin <write_address,auto[184:187]>              94          1          -    Covered              
+            bin <write_address,auto[56:59]>                94          1          -    Covered              
+            bin <write_address,auto[216:219]>              92          1          -    Covered              
+            bin <write_address,auto[88:91]>               101          1          -    Covered              
+            bin <write_address,auto[152:155]>              69          1          -    Covered              
+            bin <write_address,auto[24:27]>                84          1          -    Covered              
+            bin <write_address,auto[232:235]>              73          1          -    Covered              
+            bin <write_address,auto[104:107]>              83          1          -    Covered              
+            bin <write_address,auto[168:171]>              73          1          -    Covered              
+            bin <write_address,auto[40:43]>                98          1          -    Covered              
+            bin <write_address,auto[200:203]>              82          1          -    Covered              
+            bin <write_address,auto[72:75]>                87          1          -    Covered              
+            bin <write_address,auto[136:139]>              73          1          -    Covered              
+            bin <write_address,auto[8:11]>                 86          1          -    Covered              
+            bin <write_address,auto[240:243]>              92          1          -    Covered              
+            bin <write_address,auto[112:115]>              81          1          -    Covered              
+            bin <write_address,auto[176:179]>              77          1          -    Covered              
+            bin <write_address,auto[48:51]>                71          1          -    Covered              
+            bin <write_address,auto[208:211]>              82          1          -    Covered              
+            bin <write_address,auto[80:83]>                79          1          -    Covered              
+            bin <write_address,auto[144:147]>              83          1          -    Covered              
+            bin <write_address,auto[16:19]>                80          1          -    Covered              
+            bin <write_address,auto[224:227]>              89          1          -    Covered              
+            bin <write_address,auto[96:99]>                76          1          -    Covered              
+            bin <write_address,auto[160:163]>              92          1          -    Covered              
+            bin <write_address,auto[32:35]>                73          1          -    Covered              
+            bin <write_address,auto[192:195]>              84          1          -    Covered              
+            bin <write_address,auto[64:67]>                77          1          -    Covered              
+            bin <write_address,auto[128:131]>              80          1          -    Covered              
+            bin <write_address,auto[0:3]>                  86          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin addr_r                            5127                     -    Occurred             
+            ignore_bin data_r                            5126                     -    Occurred             
+            ignore_bin data_w                            5169                     -    Occurred             
+    Cross read_address_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <read_address,auto[252:255]>               76          1          -    Covered              
+            bin <read_address,auto[124:127]>               91          1          -    Covered              
+            bin <read_address,auto[188:191]>               75          1          -    Covered              
+            bin <read_address,auto[60:63]>                 61          1          -    Covered              
+            bin <read_address,auto[220:223]>               83          1          -    Covered              
+            bin <read_address,auto[92:95]>                 76          1          -    Covered              
+            bin <read_address,auto[156:159]>               63          1          -    Covered              
+            bin <read_address,auto[28:31]>                 89          1          -    Covered              
+            bin <read_address,auto[236:239]>               80          1          -    Covered              
+            bin <read_address,auto[108:111]>               97          1          -    Covered              
+            bin <read_address,auto[172:175]>               73          1          -    Covered              
+            bin <read_address,auto[44:47]>                 83          1          -    Covered              
+            bin <read_address,auto[204:207]>               76          1          -    Covered              
+            bin <read_address,auto[76:79]>                 74          1          -    Covered              
+            bin <read_address,auto[140:143]>               87          1          -    Covered              
+            bin <read_address,auto[12:15]>                 79          1          -    Covered              
+            bin <read_address,auto[244:247]>               80          1          -    Covered              
+            bin <read_address,auto[116:119]>               79          1          -    Covered              
+            bin <read_address,auto[180:183]>               87          1          -    Covered              
+            bin <read_address,auto[52:55]>                 87          1          -    Covered              
+            bin <read_address,auto[212:215]>               58          1          -    Covered              
+            bin <read_address,auto[84:87]>                 92          1          -    Covered              
+            bin <read_address,auto[148:151]>               94          1          -    Covered              
+            bin <read_address,auto[20:23]>                 75          1          -    Covered              
+            bin <read_address,auto[228:231]>               81          1          -    Covered              
+            bin <read_address,auto[100:103]>              102          1          -    Covered              
+            bin <read_address,auto[164:167]>               72          1          -    Covered              
+            bin <read_address,auto[36:39]>                 68          1          -    Covered              
+            bin <read_address,auto[196:199]>               82          1          -    Covered              
+            bin <read_address,auto[68:71]>                 78          1          -    Covered              
+            bin <read_address,auto[132:135]>               73          1          -    Covered              
+            bin <read_address,auto[4:7]>                   76          1          -    Covered              
+            bin <read_address,auto[248:251]>               86          1          -    Covered              
+            bin <read_address,auto[120:123]>               92          1          -    Covered              
+            bin <read_address,auto[184:187]>               76          1          -    Covered              
+            bin <read_address,auto[56:59]>                 84          1          -    Covered              
+            bin <read_address,auto[216:219]>               78          1          -    Covered              
+            bin <read_address,auto[88:91]>                 68          1          -    Covered              
+            bin <read_address,auto[152:155]>               79          1          -    Covered              
+            bin <read_address,auto[24:27]>                 93          1          -    Covered              
+            bin <read_address,auto[232:235]>               92          1          -    Covered              
+            bin <read_address,auto[104:107]>               91          1          -    Covered              
+            bin <read_address,auto[168:171]>               85          1          -    Covered              
+            bin <read_address,auto[40:43]>                 79          1          -    Covered              
+            bin <read_address,auto[200:203]>               73          1          -    Covered              
+            bin <read_address,auto[72:75]>                 62          1          -    Covered              
+            bin <read_address,auto[136:139]>               78          1          -    Covered              
+            bin <read_address,auto[8:11]>                  79          1          -    Covered              
+            bin <read_address,auto[240:243]>               74          1          -    Covered              
+            bin <read_address,auto[112:115]>               80          1          -    Covered              
+            bin <read_address,auto[176:179]>               75          1          -    Covered              
+            bin <read_address,auto[48:51]>                 91          1          -    Covered              
+            bin <read_address,auto[208:211]>               79          1          -    Covered              
+            bin <read_address,auto[80:83]>                 74          1          -    Covered              
+            bin <read_address,auto[144:147]>               77          1          -    Covered              
+            bin <read_address,auto[16:19]>                 74          1          -    Covered              
+            bin <read_address,auto[224:227]>               88          1          -    Covered              
+            bin <read_address,auto[96:99]>                 95          1          -    Covered              
+            bin <read_address,auto[160:163]>               89          1          -    Covered              
+            bin <read_address,auto[32:35]>                 75          1          -    Covered              
+            bin <read_address,auto[192:195]>               70          1          -    Covered              
+            bin <read_address,auto[64:67]>                 88          1          -    Covered              
+            bin <read_address,auto[128:131]>               76          1          -    Covered              
+            bin <read_address,auto[0:3]>                   80          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin addr_w                            5299                     -    Occurred             
+            ignore_bin data_r1                           5126                     -    Occurred             
+            ignore_bin data_w1                           5169                     -    Occurred             
+ TYPE /SPI_cv_collector_pkg/SPI_coverage/SPI_cvr_gp 
+                                                       93.33%        100          -    Uncovered            
+    covered/total bins:                                    37         41          -                      
+    missing/total bins:                                     4         41          -                      
+    % Hit:                                             90.24%        100          -                      
+    Coverpoint cs_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross MOSI_cross_cs                               100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross SS_n_cross_cs                                60.00%        100          -    Uncovered            
+        covered/total bins:                                 6         10          -                      
+        missing/total bins:                                 4         10          -                      
+        % Hit:                                         60.00%        100          -                      
+    Cross MOSI_cross_SS_n                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/SPI_cv_collector_pkg::SPI_coverage::SPI_cvr_gp  
+                                                       93.33%        100          -    Uncovered            
+    covered/total bins:                                    37         41          -                      
+    missing/total bins:                                     4         41          -                      
+    % Hit:                                             90.24%        100          -                      
+    Coverpoint cs_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin IDLE_to_CHK_CMD                             40588          1          -    Covered              
+        bin CHK_CMD_to_WRITE                            19109          1          -    Covered              
+        bin CHK_CMD_to_READ_DATA                         9526          1          -    Covered              
+        bin CHK_CMD_to_READ_ADD                          9512          1          -    Covered              
+        bin CHK_CMD_to_IDLE                              2441          1          -    Covered              
+        bin WRITE_to_IDLE                               19108          1          -    Covered              
+        bin READ_DATA_to_IDLE                            9526          1          -    Covered              
+        bin READ_ADD_to_IDLE                             9512          1          -    Covered              
+        bin IDLE_state                                  43197          1          -    Covered              
+        bin CHK_CMD_state                               40588          1          -    Covered              
+        bin WRITE_state                                158802          1          -    Covered              
+        bin READ_ADD_state                              78752          1          -    Covered              
+        bin READ_DATA_state                             78662          1          -    Covered              
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    200274          1          -    Covered              
+        bin auto[1]                                    199727          1          -    Covered              
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    360392          1          -    Covered              
+        bin auto[1]                                     39609          1          -    Covered              
+    Cross MOSI_cross_cs                               100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],READ_DATA_state>               52795          1          -    Covered              
+            bin <auto[0],READ_DATA_state>               25867          1          -    Covered              
+            bin <auto[1],READ_ADD_state>                44407          1          -    Covered              
+            bin <auto[1],CHK_CMD_state>                 20285          1          -    Covered              
+            bin <auto[1],WRITE_state>                   60710          1          -    Covered              
+            bin <auto[1],IDLE_state>                    21530          1          -    Covered              
+            bin <auto[0],READ_ADD_state>                34345          1          -    Covered              
+            bin <auto[0],CHK_CMD_state>                 20303          1          -    Covered              
+            bin <auto[0],WRITE_state>                   98092          1          -    Covered              
+            bin <auto[0],IDLE_state>                    21667          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin cs_transition8                    2441                     -    Occurred             
+            ignore_bin cs_transition7                    9512                     -    Occurred             
+            ignore_bin cs_transition6                    9526                     -    Occurred             
+            ignore_bin cs_transition5                   19108                     -    Occurred             
+            ignore_bin cs_transition4                    9512                     -    Occurred             
+            ignore_bin cs_transition3                    9526                     -    Occurred             
+            ignore_bin cs_transition2                   19109                     -    Occurred             
+            ignore_bin cs_transition1                   40588                     -    Occurred             
+    Cross SS_n_cross_cs                                60.00%        100          -    Uncovered            
+        covered/total bins:                                 6         10          -                      
+        missing/total bins:                                 4         10          -                      
+        % Hit:                                         60.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0],READ_DATA_state>               78662          1          -    Covered              
+            bin <auto[1],IDLE_state>                    39609          1          -    Covered              
+            bin <auto[0],READ_ADD_state>                78752          1          -    Covered              
+            bin <auto[0],CHK_CMD_state>                 40588          1          -    Covered              
+            bin <auto[0],WRITE_state>                  158802          1          -    Covered              
+            bin <auto[0],IDLE_state>                     3588          1          -    Covered              
+            bin <auto[1],READ_DATA_state>                   0          1          1    ZERO                 
+            bin <auto[1],READ_ADD_state>                    0          1          1    ZERO                 
+            bin <auto[1],CHK_CMD_state>                     0          1          1    ZERO                 
+            bin <auto[1],WRITE_state>                       0          1          1    ZERO                 
+        Illegal and Ignore Bins:
+            ignore_bin cs_transition88                   2441                     -    Occurred             
+            ignore_bin cs_transition77                   9512                     -    Occurred             
+            ignore_bin cs_transition66                   9526                     -    Occurred             
+            ignore_bin cs_transition55                  19108                     -    Occurred             
+            ignore_bin cs_transition44                   9512                     -    Occurred             
+            ignore_bin cs_transition33                   9526                     -    Occurred             
+            ignore_bin cs_transition22                  19109                     -    Occurred             
+            ignore_bin cs_transition11                  40588                     -    Occurred             
+    Cross MOSI_cross_SS_n                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                       19741          1          -    Covered              
+            bin <auto[0],auto[1]>                       19868          1          -    Covered              
+            bin <auto[1],auto[0]>                      179986          1          -    Covered              
+            bin <auto[0],auto[0]>                      180406          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 94.88%  COVERGROUP TYPES: 2
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top/DUT/check_asserts/toCHK_CMD_cp      SPI_Asrts Verilog  SVA  SPI_SVA.sv(38)  36813 Covered   
+/top/DUT/check_asserts/toWRITE_cp        SPI_Asrts Verilog  SVA  SPI_SVA.sv(39)  17299 Covered   
+/top/DUT/check_asserts/toREAD_cp         SPI_Asrts Verilog  SVA  SPI_SVA.sv(40)  17307 Covered   
+/top/DUT/check_asserts/toIDLE_cp         SPI_Asrts Verilog  SVA  SPI_SVA.sv(41)  36866 Covered   
+/top/DUT/check_asserts/Reset_cp          SPI_Asrts Verilog  SVA  SPI_SVA.sv(42)  3941 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 5
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/DUT/r1/Assrt1   ram.sv(24)                         0          0
+/top/DUT/r1/Assrt2   ram.sv(25)                         0          0
+/top/DUT/check_asserts/toCHK_CMD_sva
+                     SPI_SVA.sv(32)                     0          1
+/top/DUT/check_asserts/toWRITE_sva
+                     SPI_SVA.sv(33)                     0          1
+/top/DUT/check_asserts/toREAD_sva
+                     SPI_SVA.sv(34)                     0          1
+/top/DUT/check_asserts/toIDLE_sva
+                     SPI_SVA.sv(35)                     0          1
+/top/DUT/check_asserts/Reset_sva
+                     SPI_SVA.sv(36)                     0          1
+/SPI_Sequences_pkg/SPI_write_seq/body/#ublk#5870615#37/immed__42
+                     spi_Sequences.sv(42)               0          1
+/SPI_Sequences_pkg/SPI_read_seq/body/#ublk#5870615#61/immed__66
+                     spi_Sequences.sv(66)               0          1
+/SPI_Sequences_pkg/SPI_main_seq/body/#ublk#5870615#85/immed__90
+                     spi_Sequences.sv(90)               0          1
+
+Total Coverage By Instance (filtered view): 91.62%
+

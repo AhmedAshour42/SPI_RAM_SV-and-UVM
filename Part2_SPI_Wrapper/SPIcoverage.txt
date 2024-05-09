@@ -1,0 +1,371 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/DUT/r1
+=== Design Unit: work.ram
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       2         0         2     0.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/DUT/r1/Assrt1   Ram.sv(24)                         0          0
+/top/DUT/r1/Assrt2   Ram.sv(25)                         0          0
+
+=================================================================================
+=== Instance: /top/DUT/check_asserts
+=== Design Unit: work.SPI_Asrts
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       5         5         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/DUT/check_asserts/toCHK_CMD_sva
+                     SPI_SVA.sv(32)                     0          1
+/top/DUT/check_asserts/toWRITE_sva
+                     SPI_SVA.sv(33)                     0          1
+/top/DUT/check_asserts/toREAD_sva
+                     SPI_SVA.sv(34)                     0          1
+/top/DUT/check_asserts/toIDLE_sva
+                     SPI_SVA.sv(35)                     0          1
+/top/DUT/check_asserts/Reset_sva
+                     SPI_SVA.sv(36)                     0          1
+
+Directive Coverage:
+    Directives                       5         5         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top/DUT/check_asserts/toCHK_CMD_cp      SPI_Asrts Verilog  SVA  SPI_SVA.sv(38)  36813 Covered   
+/top/DUT/check_asserts/toWRITE_cp        SPI_Asrts Verilog  SVA  SPI_SVA.sv(39)  17299 Covered   
+/top/DUT/check_asserts/toREAD_cp         SPI_Asrts Verilog  SVA  SPI_SVA.sv(40)  17307 Covered   
+/top/DUT/check_asserts/toIDLE_cp         SPI_Asrts Verilog  SVA  SPI_SVA.sv(41)  36866 Covered   
+/top/DUT/check_asserts/Reset_cp          SPI_Asrts Verilog  SVA  SPI_SVA.sv(42)  3941 Covered   
+
+=================================================================================
+=== Instance: /SPI_Sequences_pkg
+=== Design Unit: work.SPI_Sequences_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       3         3         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/SPI_Sequences_pkg/SPI_write_seq/body/#ublk#5870615#37/immed__42
+                     spi_Sequences.sv(42)               0          1
+/SPI_Sequences_pkg/SPI_read_seq/body/#ublk#5870615#61/immed__66
+                     spi_Sequences.sv(66)               0          1
+/SPI_Sequences_pkg/SPI_main_seq/body/#ublk#5870615#85/immed__90
+                     spi_Sequences.sv(90)               0          1
+
+=================================================================================
+=== Instance: /SPI_cv_collector_pkg
+=== Design Unit: work.SPI_cv_collector_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    93.33%
+        Coverpoints/Crosses          6        na        na        na
+            Covergroup Bins         41        37         4    90.24%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /SPI_cv_collector_pkg/SPI_coverage/SPI_cvr_gp 
+                                                       93.33%        100          -    Uncovered            
+    covered/total bins:                                    37         41          -                      
+    missing/total bins:                                     4         41          -                      
+    % Hit:                                             90.24%        100          -                      
+    Coverpoint cs_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross MOSI_cross_cs                               100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross SS_n_cross_cs                                60.00%        100          -    Uncovered            
+        covered/total bins:                                 6         10          -                      
+        missing/total bins:                                 4         10          -                      
+        % Hit:                                         60.00%        100          -                      
+    Cross MOSI_cross_SS_n                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/SPI_cv_collector_pkg::SPI_coverage::SPI_cvr_gp  
+                                                       93.33%        100          -    Uncovered            
+    covered/total bins:                                    37         41          -                      
+    missing/total bins:                                     4         41          -                      
+    % Hit:                                             90.24%        100          -                      
+    Coverpoint cs_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin IDLE_to_CHK_CMD                             40588          1          -    Covered              
+        bin CHK_CMD_to_WRITE                            19109          1          -    Covered              
+        bin CHK_CMD_to_READ_DATA                         9526          1          -    Covered              
+        bin CHK_CMD_to_READ_ADD                          9512          1          -    Covered              
+        bin CHK_CMD_to_IDLE                              2441          1          -    Covered              
+        bin WRITE_to_IDLE                               19108          1          -    Covered              
+        bin READ_DATA_to_IDLE                            9526          1          -    Covered              
+        bin READ_ADD_to_IDLE                             9512          1          -    Covered              
+        bin IDLE_state                                  43197          1          -    Covered              
+        bin CHK_CMD_state                               40588          1          -    Covered              
+        bin WRITE_state                                158802          1          -    Covered              
+        bin READ_ADD_state                              78752          1          -    Covered              
+        bin READ_DATA_state                             78662          1          -    Covered              
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    200274          1          -    Covered              
+        bin auto[1]                                    199727          1          -    Covered              
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    360392          1          -    Covered              
+        bin auto[1]                                     39609          1          -    Covered              
+    Cross MOSI_cross_cs                               100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],READ_DATA_state>               52795          1          -    Covered              
+            bin <auto[0],READ_DATA_state>               25867          1          -    Covered              
+            bin <auto[1],READ_ADD_state>                44407          1          -    Covered              
+            bin <auto[1],CHK_CMD_state>                 20285          1          -    Covered              
+            bin <auto[1],WRITE_state>                   60710          1          -    Covered              
+            bin <auto[1],IDLE_state>                    21530          1          -    Covered              
+            bin <auto[0],READ_ADD_state>                34345          1          -    Covered              
+            bin <auto[0],CHK_CMD_state>                 20303          1          -    Covered              
+            bin <auto[0],WRITE_state>                   98092          1          -    Covered              
+            bin <auto[0],IDLE_state>                    21667          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin cs_transition8                    2441                     -    Occurred             
+            ignore_bin cs_transition7                    9512                     -    Occurred             
+            ignore_bin cs_transition6                    9526                     -    Occurred             
+            ignore_bin cs_transition5                   19108                     -    Occurred             
+            ignore_bin cs_transition4                    9512                     -    Occurred             
+            ignore_bin cs_transition3                    9526                     -    Occurred             
+            ignore_bin cs_transition2                   19109                     -    Occurred             
+            ignore_bin cs_transition1                   40588                     -    Occurred             
+    Cross SS_n_cross_cs                                60.00%        100          -    Uncovered            
+        covered/total bins:                                 6         10          -                      
+        missing/total bins:                                 4         10          -                      
+        % Hit:                                         60.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0],READ_DATA_state>               78662          1          -    Covered              
+            bin <auto[1],IDLE_state>                    39609          1          -    Covered              
+            bin <auto[0],READ_ADD_state>                78752          1          -    Covered              
+            bin <auto[0],CHK_CMD_state>                 40588          1          -    Covered              
+            bin <auto[0],WRITE_state>                  158802          1          -    Covered              
+            bin <auto[0],IDLE_state>                     3588          1          -    Covered              
+            bin <auto[1],READ_DATA_state>                   0          1          1    ZERO                 
+            bin <auto[1],READ_ADD_state>                    0          1          1    ZERO                 
+            bin <auto[1],CHK_CMD_state>                     0          1          1    ZERO                 
+            bin <auto[1],WRITE_state>                       0          1          1    ZERO                 
+        Illegal and Ignore Bins:
+            ignore_bin cs_transition88                   2441                     -    Occurred             
+            ignore_bin cs_transition77                   9512                     -    Occurred             
+            ignore_bin cs_transition66                   9526                     -    Occurred             
+            ignore_bin cs_transition55                  19108                     -    Occurred             
+            ignore_bin cs_transition44                   9512                     -    Occurred             
+            ignore_bin cs_transition33                   9526                     -    Occurred             
+            ignore_bin cs_transition22                  19109                     -    Occurred             
+            ignore_bin cs_transition11                  40588                     -    Occurred             
+    Cross MOSI_cross_SS_n                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                       19741          1          -    Covered              
+            bin <auto[0],auto[1]>                       19868          1          -    Covered              
+            bin <auto[1],auto[0]>                      179986          1          -    Covered              
+            bin <auto[0],auto[0]>                      180406          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /SPI_cv_collector_pkg/SPI_coverage/SPI_cvr_gp 
+                                                       93.33%        100          -    Uncovered            
+    covered/total bins:                                    37         41          -                      
+    missing/total bins:                                     4         41          -                      
+    % Hit:                                             90.24%        100          -                      
+    Coverpoint cs_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross MOSI_cross_cs                               100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross SS_n_cross_cs                                60.00%        100          -    Uncovered            
+        covered/total bins:                                 6         10          -                      
+        missing/total bins:                                 4         10          -                      
+        % Hit:                                         60.00%        100          -                      
+    Cross MOSI_cross_SS_n                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/SPI_cv_collector_pkg::SPI_coverage::SPI_cvr_gp  
+                                                       93.33%        100          -    Uncovered            
+    covered/total bins:                                    37         41          -                      
+    missing/total bins:                                     4         41          -                      
+    % Hit:                                             90.24%        100          -                      
+    Coverpoint cs_cp                                  100.00%        100          -    Covered              
+        covered/total bins:                                13         13          -                      
+        missing/total bins:                                 0         13          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin IDLE_to_CHK_CMD                             40588          1          -    Covered              
+        bin CHK_CMD_to_WRITE                            19109          1          -    Covered              
+        bin CHK_CMD_to_READ_DATA                         9526          1          -    Covered              
+        bin CHK_CMD_to_READ_ADD                          9512          1          -    Covered              
+        bin CHK_CMD_to_IDLE                              2441          1          -    Covered              
+        bin WRITE_to_IDLE                               19108          1          -    Covered              
+        bin READ_DATA_to_IDLE                            9526          1          -    Covered              
+        bin READ_ADD_to_IDLE                             9512          1          -    Covered              
+        bin IDLE_state                                  43197          1          -    Covered              
+        bin CHK_CMD_state                               40588          1          -    Covered              
+        bin WRITE_state                                158802          1          -    Covered              
+        bin READ_ADD_state                              78752          1          -    Covered              
+        bin READ_DATA_state                             78662          1          -    Covered              
+    Coverpoint MOSI_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    200274          1          -    Covered              
+        bin auto[1]                                    199727          1          -    Covered              
+    Coverpoint SS_n_cp                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                    360392          1          -    Covered              
+        bin auto[1]                                     39609          1          -    Covered              
+    Cross MOSI_cross_cs                               100.00%        100          -    Covered              
+        covered/total bins:                                10         10          -                      
+        missing/total bins:                                 0         10          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],READ_DATA_state>               52795          1          -    Covered              
+            bin <auto[0],READ_DATA_state>               25867          1          -    Covered              
+            bin <auto[1],READ_ADD_state>                44407          1          -    Covered              
+            bin <auto[1],CHK_CMD_state>                 20285          1          -    Covered              
+            bin <auto[1],WRITE_state>                   60710          1          -    Covered              
+            bin <auto[1],IDLE_state>                    21530          1          -    Covered              
+            bin <auto[0],READ_ADD_state>                34345          1          -    Covered              
+            bin <auto[0],CHK_CMD_state>                 20303          1          -    Covered              
+            bin <auto[0],WRITE_state>                   98092          1          -    Covered              
+            bin <auto[0],IDLE_state>                    21667          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin cs_transition8                    2441                     -    Occurred             
+            ignore_bin cs_transition7                    9512                     -    Occurred             
+            ignore_bin cs_transition6                    9526                     -    Occurred             
+            ignore_bin cs_transition5                   19108                     -    Occurred             
+            ignore_bin cs_transition4                    9512                     -    Occurred             
+            ignore_bin cs_transition3                    9526                     -    Occurred             
+            ignore_bin cs_transition2                   19109                     -    Occurred             
+            ignore_bin cs_transition1                   40588                     -    Occurred             
+    Cross SS_n_cross_cs                                60.00%        100          -    Uncovered            
+        covered/total bins:                                 6         10          -                      
+        missing/total bins:                                 4         10          -                      
+        % Hit:                                         60.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0],READ_DATA_state>               78662          1          -    Covered              
+            bin <auto[1],IDLE_state>                    39609          1          -    Covered              
+            bin <auto[0],READ_ADD_state>                78752          1          -    Covered              
+            bin <auto[0],CHK_CMD_state>                 40588          1          -    Covered              
+            bin <auto[0],WRITE_state>                  158802          1          -    Covered              
+            bin <auto[0],IDLE_state>                     3588          1          -    Covered              
+            bin <auto[1],READ_DATA_state>                   0          1          1    ZERO                 
+            bin <auto[1],READ_ADD_state>                    0          1          1    ZERO                 
+            bin <auto[1],CHK_CMD_state>                     0          1          1    ZERO                 
+            bin <auto[1],WRITE_state>                       0          1          1    ZERO                 
+        Illegal and Ignore Bins:
+            ignore_bin cs_transition88                   2441                     -    Occurred             
+            ignore_bin cs_transition77                   9512                     -    Occurred             
+            ignore_bin cs_transition66                   9526                     -    Occurred             
+            ignore_bin cs_transition55                  19108                     -    Occurred             
+            ignore_bin cs_transition44                   9512                     -    Occurred             
+            ignore_bin cs_transition33                   9526                     -    Occurred             
+            ignore_bin cs_transition22                  19109                     -    Occurred             
+            ignore_bin cs_transition11                  40588                     -    Occurred             
+    Cross MOSI_cross_SS_n                             100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1]>                       19741          1          -    Covered              
+            bin <auto[0],auto[1]>                       19868          1          -    Covered              
+            bin <auto[1],auto[0]>                      179986          1          -    Covered              
+            bin <auto[0],auto[0]>                      180406          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 93.33%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/top/DUT/check_asserts/toCHK_CMD_cp      SPI_Asrts Verilog  SVA  SPI_SVA.sv(38)  36813 Covered   
+/top/DUT/check_asserts/toWRITE_cp        SPI_Asrts Verilog  SVA  SPI_SVA.sv(39)  17299 Covered   
+/top/DUT/check_asserts/toREAD_cp         SPI_Asrts Verilog  SVA  SPI_SVA.sv(40)  17307 Covered   
+/top/DUT/check_asserts/toIDLE_cp         SPI_Asrts Verilog  SVA  SPI_SVA.sv(41)  36866 Covered   
+/top/DUT/check_asserts/Reset_cp          SPI_Asrts Verilog  SVA  SPI_SVA.sv(42)  3941 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 5
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/top/DUT/r1/Assrt1   Ram.sv(24)                         0          0
+/top/DUT/r1/Assrt2   Ram.sv(25)                         0          0
+/top/DUT/check_asserts/toCHK_CMD_sva
+                     SPI_SVA.sv(32)                     0          1
+/top/DUT/check_asserts/toWRITE_sva
+                     SPI_SVA.sv(33)                     0          1
+/top/DUT/check_asserts/toREAD_sva
+                     SPI_SVA.sv(34)                     0          1
+/top/DUT/check_asserts/toIDLE_sva
+                     SPI_SVA.sv(35)                     0          1
+/top/DUT/check_asserts/Reset_sva
+                     SPI_SVA.sv(36)                     0          1
+/SPI_Sequences_pkg/SPI_write_seq/body/#ublk#5870615#37/immed__42
+                     spi_Sequences.sv(42)               0          1
+/SPI_Sequences_pkg/SPI_read_seq/body/#ublk#5870615#61/immed__66
+                     spi_Sequences.sv(66)               0          1
+/SPI_Sequences_pkg/SPI_main_seq/body/#ublk#5870615#85/immed__90
+                     spi_Sequences.sv(90)               0          1
+
+Total Coverage By Instance (filtered view): 91.11%
+
